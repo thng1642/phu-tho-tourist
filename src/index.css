@@ -30,3 +30,47 @@ footer {
   line-height: normal;
   letter-spacing: 1.4px;
 }
+.news-card-info {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131.25%
+}
+#news-card-content {
+  min-width: 330px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: var(--gray-gray-500, #666);
+}
+.type-content {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 46px;
+  background: var(--blue-primary-50, #E6EEF7);
+
+  /* Text inside */
+  color: var(--blue-primary-500, #0054A6);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.filter-news-card {
+  position: absolute;
+  top: 174px;
+  margin: 0 170px 342px 139px;
+  display: inline-flex;
+  width: 53px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
