@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        'news-card': ' 0px 4px 20px 0px rgba(0, 0, 0, 0.15)'
+        'news-card': ' 0px 4px 20px 0px rgba(0, 0, 0, 0.15)',
+        'deco-img': '0px 4px 21px 0px rgba(0, 0, 0, 0.25)'
       }
     },
   },

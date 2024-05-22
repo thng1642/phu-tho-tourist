@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   background-color: aqua;
-}
+} */
 footer {
   /* Roboto/16px: Regular */
   font-family: Roboto;
@@ -73,4 +73,12 @@ footer {
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
+}
+.vector-about-we::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #6698CA;
 }
