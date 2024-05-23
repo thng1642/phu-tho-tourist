@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: aqua;
-} */
+body {
+  /* background-color: aqua; */
+  /* position: relative; */
+}
 footer {
   /* Roboto/16px: Regular */
   font-family: Roboto;

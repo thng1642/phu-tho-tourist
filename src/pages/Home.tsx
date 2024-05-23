@@ -3,7 +3,7 @@ import ServicesCard from "../components/ServicesCard";
 
 export default function Home(){
     return(
-        <main className="flex flex-col items-center backdrop-blur-[7.5px]">
+        <main className="flex flex-col relative z-20 items-center backdrop-blur-[7.5px]">
             {/* About me */}
             <article className="w-[1520px] flex bg-white items-center pt-[46px] pr-[81px] pb-[56px] pl-[54px] gap-[72px]">
                 <div className="flex flex-col gap-8">
