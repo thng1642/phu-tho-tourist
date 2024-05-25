@@ -1,0 +1,48 @@
+.card-docs {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('https://images.unsplash.com/photo-1716321952175-11aecece3462?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') lightgray 50% / cover no-repeat;
+    border-radius: 12px;
+    box-shadow: 0px 1.776px 7.102px 0px rgba(0, 0, 0, 0.25);
+}
+.card-docs h4 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14.204px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+/* ============= TABLE STYLE ============= */
+.container-table-docs {
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(7.5px);
+}
+.table-content {
+    width: 1126px;
+}
+.table-content .table-header {
+    background-color: #0054A6;
+    color: var(--white, #FFF);
+    /* Roboto/18px: Bold */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.table-header :first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+.table-header :last-child {
+    border-radius: 0px 8px 8px 0px;
+}
+.table-content td,th {
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+.table-content tr:not(.table-header) {
+    background-color: #E6EEF7;
+}

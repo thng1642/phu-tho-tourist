@@ -6,7 +6,7 @@ body {
   /* background-color: aqua; */
   /* position: relative; */
 }
-footer {
+footer, .content-page {
   /* Roboto/16px: Regular */
   font-family: Roboto;
   font-size: 16px;
