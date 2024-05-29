@@ -6,13 +6,26 @@ body {
   /* background-color: aqua; */
   /* position: relative; */
 }
-footer, .content-page {
+footer,
+.content-page {
   /* Roboto/16px: Regular */
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 131.25% 
+  line-height: 131.25%;
+}
+.header-card-hiring {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.header-card-more {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 .name-cty {
   /* color: var(--White, #FFF); */
@@ -23,7 +36,7 @@ footer, .content-page {
   line-height: normal;
 }
 .name-logo {
-  color: #9FF;
+  color: #9ff;
   font-family: "Helvetica Neue";
   font-size: 35px;
   font-style: normal;
@@ -35,7 +48,7 @@ footer, .content-page {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 131.25%
+  line-height: 131.25%;
 }
 #news-card-content {
   min-width: 330px;
@@ -54,10 +67,10 @@ footer, .content-page {
   justify-content: center;
   align-items: center;
   border-radius: 46px;
-  background: var(--blue-primary-50, #E6EEF7);
+  background: var(--blue-primary-50, #e6eef7);
 
   /* Text inside */
-  color: var(--blue-primary-500, #0054A6);
+  color: var(--blue-primary-500, #0054a6);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -81,5 +94,13 @@ footer, .content-page {
   content: "";
   width: 2px;
   height: 100%;
-  background-color: #6698CA;
+  background-color: #6698ca;
+}
+.more-info {
+  /* Roboto/14px: Regular */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

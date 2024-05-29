@@ -3,6 +3,8 @@ import Layout from "../pages/Layout";
 import Home from "../pages/Home";
 import Feed from "../pages/Feed";
 import Docs from "../pages/Docs";
+import Hiring from "../pages/Hiring";
+import DetailsHiring from "../pages/DetailsHiring";
 
 export default function AppRouter() {
 
@@ -14,6 +16,8 @@ export default function AppRouter() {
                     <Route index element={<Home />}/>
                     <Route path="feeds" element={<Feed />} />
                     <Route path="docs" element={<Docs />} />
+                    <Route path="tuyendung" element={<Hiring />} />
+                    <Route path="details" element={<DetailsHiring />} />
                 </Route>
             </Routes>
         </BrowserRouter>

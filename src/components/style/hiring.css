@@ -1,0 +1,85 @@
+.heading-1 {
+  color: var(--blue-primary-600, #003f7d);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.heading-2 {
+  color: var(--blue-primary-500, #0054a6);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.heading-3 {
+  color: var(--blue-primary-500, #0054a6);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.heading-4 {
+  color: var(--blue-primary-400, #3376b8);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.explication {
+  color: var(--gray-gray-500, #666);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+}
+.label-input {
+  color: var(--gray-gray-600, #4d4d4d);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* line-height: 27px; */
+}
+.label-radio {
+  color: var(--gray-gray-600, #4d4d4d);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+/* ============= TABLE DETAILS ============= */
+.table-data {
+  color: var(--gray-gray-700, #333);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 225% */
+}
+#details-jobs-table {
+  width: 1166px;
+}
+#details-jobs-table td,
+th {
+  padding: 16px 36px;
+}
+#details-jobs-table th {
+  text-align: left;
+  width: 218px;
+  border-right: 1px solid var(--gray-gray-200, #c2c2c2);
+  color: var(--gray-gray-700, #333);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 200% */
+}
+#details-jobs-table td {
+  width: auto;
+}
+#details-jobs-table tr:nth-child(even) {
+  border-top: 1px solid var(--gray-gray-200, #c2c2c2);
+  border-bottom: 1px solid var(--gray-gray-200, #c2c2c2);
+}
+tr:last-child {
+  border-bottom: none !important;
+}
