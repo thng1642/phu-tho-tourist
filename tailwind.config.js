@@ -12,10 +12,10 @@ export default {
         'mini-tag': '0px 2px 16px 0px rgba(0, 0, 0, 0.10)',
         'new-feed': '0px 2px 24px 0px rgba(0, 0, 0, 0.15)',
         'filter': '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
-        'details': ' 0px 2px 32px 0px rgba(0, 0, 0, 0.20)'
+        'details': ' 0px 2px 32px 0px rgba(0, 0, 0, 0.20)',
+        'dropdown-search': '0px 2px 30px 0px rgba(0, 0, 0, 0.15)'
       }
-    },
+    }
   },
   plugins: [],
 }
-

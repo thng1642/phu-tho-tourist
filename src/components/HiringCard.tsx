@@ -25,11 +25,12 @@ export default function HiringCard() {
                     <span className="more-info text-[#666666]">2 tuần trước</span>
                 </div>
             </div>
+            <div className='rounded-[46px] font-[Roboto] text-[14px] font-normal bg-[#E6F7E6] text-[#03A600] px-3 py-2 absolute top-[84px] right-5'>Đang tuyển</div>
             <div className='mb-4 flex flex-col gap-2 ml-[21px]'>
                 <h4 className='text-[#0054A6] text-[16px] font-semibold leading-[normal]'>Mô tả công việc:</h4>
                 <p className='text-[#666666] text-[13px] font-normal leading-[17px] line-clamp-4 w-[320px]'>Trung tâm dịch vụ du lịch Đầm Sen cần tuyển 2 Nhân viên kinh doanh lữ hành. Yêu cầu: Tốt nghiệp CĐ, ĐH chuyên ngành Du lich, QT kinh doanh, Marketing. Am hiểu tâm lý</p>
             </div>
-            <div className='mx-5 rounded-[99px] bg-[#0054A6] text-white text-[16px] leading-[normal] font-semibold flex justify-center items-center h-11'>
+            <div className='btn mx-5 rounded-[99px] bg-[#0054A6] text-white text-[16px] leading-[normal] font-semibold flex justify-center items-center h-11'>
                 Xem chi tiết
             </div>
         </div>

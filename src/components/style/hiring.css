@@ -1,3 +1,14 @@
+.title-hiring {
+  color: var(--blue-primary-500, #0054a6);
+  margin-bottom: 16px;
+  /* Roboto/20px: Bold */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/* ============= DETAIL JOB ============= */
 .heading-1 {
   color: var(--blue-primary-600, #003f7d);
   font-size: 36px;
@@ -59,7 +70,7 @@
   width: 1166px;
 }
 #details-jobs-table td,
-th {
+#detail-jobs-table th {
   padding: 16px 36px;
 }
 #details-jobs-table th {

@@ -2,8 +2,8 @@ import './style/document.css'
 
 export default function Document() {
     return (
-        <div className="card-docs h-[261px]  flex flex-col justify-center items-center">
-            <div className='flex flex-col justify-center items-center'>
+        <div className="card-docs h-[261px] flex flex-col justify-center items-center relative">
+            <div className='card-docs-content flex flex-col justify-center items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
                     <g clip-path="url(#clip0_272_54101)">
                         <path d="M33.0587 26.2449V16.5906C33.0587 15.7371 33.3978 14.9185 34.0013 14.315C34.6048 13.7115 35.4233 13.3724 36.2768 13.3724H68.458L84.5485 29.463V74.5166C84.5485 75.3701 84.2095 76.1886 83.6059 76.7921C83.0024 77.3956 82.1839 77.7347 81.3304 77.7347H71.6761" fill="#E1E1E1" />
@@ -17,6 +17,7 @@ export default function Document() {
                 </svg>
                 <h4>Báo cáo Tài Chính năm 2022-2023</h4>
             </div>
+            <p className='absolute bottom-3 text-white text-[16px] font-[Roboto] font-semibold'>Click để xem</p>
         </div>
     )
 }

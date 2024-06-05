@@ -1,9 +1,14 @@
+import './style/newsCard.css'
+
 export default function NewsCard() {
 
     return(
-        <article className="relative w-[362px] h-[542px] rounded-xl font-[Roboto] bg-white shadow-news-card shrink-0">
+        <a href='#' className="relative w-[362px] h-[542px] rounded-xl font-[Roboto] bg-white shadow-news-card shrink-0 card-news-container">
             {/* Avatar */}
-            <div className="w-full h-[197px]">
+            <div className="w-full h-[197px] overflow-hidden block card-news-img relative">
+                <div className='absolute w-full h-full top-0'>
+                    <span className='font-semibold text-[20px] text-white'>Click để xem</span>
+                </div>
                 <img className="object-cover rounded-t-xl w-full h-full" src="https://images.unsplash.com/photo-1715093458373-83b4e8194203?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="avatar" />
             </div>
             {/* Filter */}
@@ -44,6 +49,6 @@ export default function NewsCard() {
                     </div>
                 </div>
             </section>
-        </article>
+        </a>
     )
 }

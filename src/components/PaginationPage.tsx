@@ -9,11 +9,11 @@ export default function PaginationPage() {
                     </svg>
                 </div>
                 <div className='h-8 flex gap-2 text-base text-white font-[Roboto]'>
-                    <div className="h-full bg-[#0054A6] w-8 rounded-sm flex items-center justify-center">1</div>
-                    <div className="h-full w-8 rounded-sm flex items-center justify-center">2</div>
-                    <div className="h-full w-8 rounded-sm flex items-center justify-center">3</div>
-                    <div className="h-full w-8 rounded-sm flex items-center justify-center">...</div>
-                    <div className="h-full w-8 rounded-sm flex items-center justify-center">10</div>
+                    <div className="h-full bg-[#0054A6] w-8 flex items-center justify-center rounded">1</div>
+                    <div className="h-full w-8 hover:rounded hover:cursor-pointer hover:border-[#0054A6] hover:border-[1px] flex items-center justify-center text-[#4D4D4D]">2</div>
+                    <div className="h-full w-8 hover:rounded hover:cursor-pointer hover:border-[#0054A6] hover:border-[1px] flex items-center justify-center text-[#4D4D4D]">3</div>
+                    <div className="h-full w-8 hover:rounded hover:cursor-pointer hover:border-[#0054A6] hover:border-[1px] flex items-center justify-center text-[#4D4D4D]">...</div>
+                    <div className="h-full w-8 hover:rounded hover:cursor-pointer hover:border-[#0054A6] hover:border-[1px] flex items-center justify-center text-[#4D4D4D]">10</div>
                 </div>
                 <div className='w-8 h-8 flex items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">

@@ -1,17 +1,22 @@
+import '../components/style/newsCard.css'
+
 export default function FeedCard() {
-    return(
-        <article className="relative w-[265px] pb-[10px] rounded-lg flex flex-col gap-4 font-[Roboto] bg-white shadow-news-card shrink-0">
+    return (
+        <article className="relative w-[265px] pb-[10px] rounded-lg flex flex-col gap-4 font-[Roboto] bg-white shadow-news-card shrink-0 cursor-pointer z-20 card-news-container">
             {/* Avatar */}
-            <div className="w-full h-[146px]">
+            <div className="w-full h-[146px] block overflow-hidden card-news-img relative">
+                <div className='absolute w-full h-full top-0'>
+                    <span className='font-semibold text-[20px] text-white'>Click để xem</span>
+                </div>
                 <img className="object-cover rounded-t-xl w-full h-full" src="https://images.unsplash.com/photo-1715093458373-83b4e8194203?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="avatar" />
             </div>
             <section className="flex flex-col items-start gap-2 px-3 shrink-0">
                 {/* Main content */}
                 <div>
-                    <div className="capitalize flex items-center gap-1 h-4 text-[14px]">
+                    <div className="capitalize flex items-center gap-1 h-4 text-[14px] mb-2">
                         admin
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
-                            <circle cx="4" cy="4.5" r="4" fill="#03A600"/>
+                            <circle cx="4" cy="4.5" r="4" fill="#03A600" />
                         </svg>
                     </div>
                     <div>
@@ -29,10 +34,10 @@ export default function FeedCard() {
                     </div>
                     <div className="text-[#858585] text-[14px] font-[Roboto] font-normal leading-[normal]">
                         <div className="flex items-center gap-2 fill-[#858585]">
-                            10N lượt xem 
+                            10N lượt xem
                             <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" viewBox="0 0 3 3" fill="none">
-                                <circle cx="1.5" cy="1.5" r="1.5" fill="#858585"/>
-                            </svg> 
+                                <circle cx="1.5" cy="1.5" r="1.5" fill="#858585" />
+                            </svg>
                             20/02/2022
                         </div>
                     </div>

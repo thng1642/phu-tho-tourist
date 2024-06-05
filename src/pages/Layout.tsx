@@ -4,11 +4,14 @@ import Header from "../components/Header";
 export default function Layout() {
     return (
         <>
-            <div className="bg-[url('https://images.unsplash.com/photo-1621427205454-f353b26c4210?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-no-repeat w-full h-[1080px] bg-cover -z-10 sticky top-0"></div>
+            {/* <div className="w-full h-[1080px] -z-10 sticky top-0"> */}
+                <video src="https://firebasestorage.googleapis.com/v0/b/alta-875f0.appspot.com/o/-b581-45d9-98eb-64676259fd20.mp4?alt=media&token=59d08e73-305d-4461-9930-478cbca936e7" 
+                    loop muted autoPlay className="-z-10 sticky top-0 w-full h-[1080px] object-cover" />
+            {/* </div> */}
             <Header />
             <div className="relative top-[-912px]">
                 <Outlet />
             </div>
         </>
     )
-}
+} 

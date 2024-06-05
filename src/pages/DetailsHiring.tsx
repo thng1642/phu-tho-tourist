@@ -234,7 +234,7 @@ export default function DetailsHiring() {
                             <textarea name="experences" className="pt-[10px] pl-4 w-full rounded-lg h-[151px] focus:outline-none" placeholder="Kinh nghiệm bản thân" id=""></textarea>
                         </div>
                         <div className="flex justify-end w-full mb-[42px]">
-                            <div className="px-7 h-11 w-fit rounded-md flex items-center bg-[#0054A6] text-white font-semibold text-[18px]"><span>Gửi ngay</span></div>
+                            <div className="btn px-7 h-11 w-fit rounded-md flex items-center bg-[#0054A6] text-white font-semibold text-[18px]"><span>Gửi ngay</span></div>
                         </div>
                     </div>
                 </div>

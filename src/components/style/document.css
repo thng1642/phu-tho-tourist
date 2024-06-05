@@ -1,7 +1,27 @@
 .card-docs {
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    p {
+        opacity: 0;
+    }
+}
+.card-docs-content {
+    height: 261px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('https://images.unsplash.com/photo-1716321952175-11aecece3462?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') lightgray 50% / cover no-repeat;
     border-radius: 12px;
     box-shadow: 0px 1.776px 7.102px 0px rgba(0, 0, 0, 0.25);
+}
+.card-docs:hover { 
+    .card-docs-content {
+        transform: scale3d(1.1, 1.2, 1);
+        transition: transform 0.3s ease-out;
+    }
+    p {
+        opacity: 1;
+        transition-duration: 0.3ms;
+        transition-timing-function: ease-out;
+    }
 }
 .card-docs h4 {
     color: var(--white, #FFF);
