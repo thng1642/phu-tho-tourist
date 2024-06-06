@@ -9,7 +9,7 @@ export default function Slider() {
             <div className='bg-white pb-5 pt-6 pl-5 relative h-[218px] rounded-b-xl'>
                 <div className='flex flex-col items-start shrink-0 gap-6 w-[845px] h-full'>
                     <h3 className='header-card'>Thông báo mời chào giá cạnh tranh cung cấp nước đá chế tác Băng Đăng</h3>
-                    <p className='line-clamp-4 grow content-card border-slate-950 border'>
+                    <p className='line-clamp-4 grow content-card'>
                         THÔNG BÁO MỜI CHÀO GIÁ CẠNH TRANH CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH PHÚ THỌ tổ chức chào giá cạnh tranh lựa chọn đơn vị Cung cấp nước đá để chế tác Băng Đăng tại Công viên Văn hóa Đầm Sen.
                     </p>
                 </div>

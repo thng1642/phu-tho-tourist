@@ -1,10 +1,19 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { useAppDispatch, useAppSelector } from "../app/hook";
 import Footer from "../components/Footer";
 import NewsCard from "../components/NewsCard";
 import ServicesCard from "../components/ServicesCard";
+import { fetchFeeds } from "../redux/feed/FeedSlice";
+import { RootState } from "../app/store";
 
 export default function Home() {
     const frameAbout = useRef<HTMLElement>(null)
+    const dispatch = useAppDispatch()
+    const feeds = useAppSelector((state:RootState) => state.feed)
+    const newsCards = feeds.slice(0, 3)
+    useEffect(() => {
+        dispatch(fetchFeeds())        
+    }, [])
     return (
         <>
             <div className="flex flex-col items-center">
@@ -92,9 +101,11 @@ export default function Home() {
                         <p className="text-center text-[20px] font-normal text-[#F0F0F0] leading-[23px]">Hãy cùng chúng tôi chia sẻ những bài viết mới với các thông tin về những sản phẩm du lịch</p>
                     </div>
                     <div className="inline-flex items-start gap-6 mt-[37px]">
-                        <NewsCard />
-                        <NewsCard />
-                        <NewsCard />
+                    {
+                        newsCards.map((value, index) => (
+                            <NewsCard id={value.id} title={value.title} author={value.author} dateAt={value.dateAt} description={value.description} views={value.views} types={value.type} img1={value.img1} key={index} />
+                        ))
+                    }
                     </div>
                     {/* Button */}
                     <div className="w-fit px-7 h-[44px] py-0 flex justify-center items-center gap-[10px] shrink-0 bg-[#0054A6] rounded-md mt-8 mb-[68px] btn">

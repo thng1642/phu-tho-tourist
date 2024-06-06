@@ -1,21 +1,28 @@
-import { MouseEvent } from 'react'
+import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers'
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import dayjs from 'dayjs';
+import { MouseEvent } from 'react';
 
-import '../App.css'
-import FeedCard from '../components/FeedCard'
-import Footer from '../components/Footer'
-import MiniTag from '../components/MiniTag'
-import PaginationPage from '../components/PaginationPage'
-import PolygonHeader from '../components/PolygonHeader'
-import SearchBox from '../components/SearchBox'
-import Slider from '../components/Slider'
-import '../components/style/feed.css'
+
+import '../App.css';
+import FeedCard from '../components/FeedCard';
+import Footer from '../components/Footer';
+import MiniTag from '../components/MiniTag';
+import PaginationPage from '../components/PaginationPage';
+import PolygonHeader from '../components/PolygonHeader';
+import SearchBox from '../components/SearchBox';
+import Slider from '../components/Slider';
+import '../components/style/feed.css';
+import { useAppSelector } from '../app/hook';
+import { RootState } from '../app/store';
 
 export default function Feed() {
     const items = document.getElementsByClassName("filter-pack-item")
+    const selector = useAppSelector((state:RootState) => state.feed)
+    const miniTags = [...selector]
+    const cards = [...selector]
+
     const clickTopic = (e: MouseEvent) => {
         if (e.currentTarget.className.includes("item-focus")) {
             return
@@ -41,13 +48,11 @@ export default function Feed() {
                 <div className='h-[603px] pl-6 pr-[10px] bg-[#ffffffb3] rounded-lg shrink-0 backdrop-blur-[7.5px] shadow-new-feed'>
                     <h4 className='header-new py-4'>Bài viết mới</h4>
                     <div id='new-feeds' className='h-[535px] inline-flex flex-col gap-4 shrink-0 overflow-y-auto pr-[10px]'>
-                        <MiniTag />
-                        <MiniTag />
-                        <MiniTag />
-                        <MiniTag />
-                        <MiniTag />
-                        <MiniTag />
-                        <MiniTag />
+                    {
+                        miniTags.map((value, index)=>(
+                            <MiniTag id={value.id} title={value.title} views={value.views} dateAt={value.dateAt} key={index} img2={value.img2}/>
+                        ))
+                    }
                     </div>
                 </div>
             </section>
@@ -137,18 +142,11 @@ export default function Feed() {
                 </div>
                 <div className='w-full flex flex-col gap-8 z-[1] relative'>
                     <div className='flex flex-wrap justify-between gap-y-6 '>
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
-                        <FeedCard />
+                    {
+                        cards.map((value, i) => (
+                            <FeedCard key={i} id={value.id} title={value.title} author={value.author} dateAt={value.dateAt} views={value.views} types={value.type} img3={value.img3}  />
+                        ))
+                    }
                     </div>
                     {/* Navigation page */}
                     <PaginationPage />

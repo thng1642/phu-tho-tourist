@@ -180,7 +180,7 @@ export default function DetailsHiring() {
                                 <label className="label-input">Điện thoại</label>
                                 <div className="w-[437px] h-10 flex items-center gap-4 text-[16px]">
                                     <div className="w-[74px] bg-white rounded-lg font-['Helvetica_Neue'] text-[16px] font-medium leading-9 text-[#666666] flex gap-1 items-center px-3">
-                                        <img src="../assets/vietnam.png" className="w-[18px] h-[18px] object-cover" alt="quốc kỳ" />
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/alta-875f0.appspot.com/o/vietnam.png?alt=media&token=46e4518e-12cf-4b75-805d-e3c0611e06c2" className="w-[18px] h-[18px] object-cover" alt="quốc kỳ" />
                                         <span>+84</span>
                                     </div>
                                     <div className="w-full bg-white h-10 flex items-center text-[16px] pl-4 rounded-lg">
